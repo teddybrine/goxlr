@@ -17,8 +17,8 @@ export default function (
         const data = JSON.parse(event.data);
 
         if (data.id === identifier) {
-          ws.close();
           resolve(data);
+          ws.close();
         }
       };
 
